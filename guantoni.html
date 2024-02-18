@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content
+      read="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <title>Il pugilato</title>
+  </head>
+  <body class="inter-normal">
+    <header>
+      <ul>
+        <li>
+          <a href="./progetto.html" onclick="stopSpeaking()">Introduzione</a>
+        </li>
+        <li>
+          <a href="./attrezzatura.html" onclick="stopSpeaking()"
+            >Attrezzatura</a
+          >
+        </li>
+        <li>
+          <a href="./regolamento_map.html" onclick="stopSpeaking()"
+            >Regolamento</a
+          >
+        </li>
+        <li>
+          <a href="./comportamento_map.html" onclick="stopSpeaking()"
+            >Comportamento</a
+          >
+        </li>
+        <li>
+          <a href="./rischibenefici.html" onclick="stopSpeaking()"
+            >Rischi e Benefici</a
+          >
+        </li>
+        <li>
+          <a href="./stili.html" onclick="stopSpeaking()">Stili di Pugilato</a>
+        </li>
+        <li><a href="./esercizi.html" onclick="stopSpeaking()">Esercizi</a></li>
+        <li>
+          <a href="./cennistorici.html" onclick="stopSpeaking()"
+            >Cenni Storici</a
+          >
+        </li>
+        <li><a href="" onclick="window.close();">Esci</a></li>
+      </ul>
+      <div onclick="openMenu()">
+        <svg
+          class="burger-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="800px"
+          height="800px"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </header>
+    <main>
+      <h3 class="title inter-semi-bold">
+        <div class="circle"></div>
+        Guantoni
+        <div class="tts" onclick="speak()">
+          <svg
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.592 2.081a1 1 0 0 1 1.327-.489c.264.134.001 0 .001 0l.001.001.003.002.007.003.022.01a4.892 4.892 0 0 1 .306.16c.199.109.474.27.799.488a12.272 12.272 0 0 1 2.315 2.017c1.652 1.859 3.164 4.765 2.618 8.86a1 1 0 0 1-1.982-.265c.454-3.406-.783-5.75-2.131-7.266a10.27 10.27 0 0 0-1.935-1.686 8.704 8.704 0 0 0-.82-.487 2.252 2.252 0 0 0-.038-.019l-.006-.003a1 1 0 0 1-.487-1.326ZM9.931 4.635a1 1 0 0 0-1.861 0l-5.5 14a1 1 0 0 0 1.861.73L6.146 15h5.708l1.716 4.365a1 1 0 0 0 1.861-.73l-5.5-14ZM11.069 13H6.932L9 7.735 11.07 13Zm4.378-7.394a1 1 0 0 0-.894 1.789c.29.145.792.576 1.227 1.263.422.669.72 1.486.72 2.342a1 1 0 0 0 2 0c0-1.314-.452-2.496-1.03-3.41-.565-.895-1.313-1.63-2.023-1.984Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </h3>
+      <p class="content read inter-medium">
+        I <strong>guantoni da boxe</strong> sono dispositivi protettivi
+        indossati sulle mani durante la pratica del pugilato. Solitamente
+        realizzati in pelle o materiale sintetico resistente, sono imbottiti con
+        schiuma per assorbire gli impatti e proteggere le nocche e le
+        articolazioni durante i colpi.
+      </p>
+      <script src="js/main.js"></script>
+      <div class="images_container">
+        <div class="image_ctr">
+          <img src="images/guantoni-tsunami-squad.jpg" alt="guantoni" />
+        </div>
+      </div>
+      <div class="buttons_container">
+        <a
+          href="bendaggi.html"
+          class="button inter-semi-bold"
+          onclick="stopSpeaking()"
+          ><svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.7501 8.49994C14.7501 8.69886 14.6711 8.88962 14.5304 9.03027C14.3898 9.17093 14.199 9.24994 14.0001 9.24994H4.8126L8.0326 12.4693C8.1735 12.6102 8.25265 12.8013 8.25265 13.0006C8.25265 13.1998 8.1735 13.3909 8.0326 13.5318C7.89171 13.6727 7.70061 13.7519 7.50135 13.7519C7.3021 13.7519 7.111 13.6727 6.9701 13.5318L2.4701 9.03182C2.40018 8.96214 2.34471 8.87935 2.30685 8.78818C2.269 8.69702 2.24951 8.59928 2.24951 8.50057C2.24951 8.40186 2.269 8.30412 2.30685 8.21295C2.34471 8.12179 2.40018 8.039 2.4701 7.96932L6.9701 3.46932C7.03987 3.39955 7.12269 3.34421 7.21384 3.30646C7.30499 3.2687 7.40269 3.24927 7.50135 3.24927C7.60002 3.24927 7.69771 3.2687 7.78886 3.30646C7.88002 3.34421 7.96284 3.39955 8.0326 3.46932C8.10237 3.53908 8.15771 3.62191 8.19546 3.71306C8.23322 3.80421 8.25265 3.90191 8.25265 4.00057C8.25265 4.09923 8.23322 4.19693 8.19546 4.28808C8.15771 4.37923 8.10237 4.46205 8.0326 4.53182L4.8126 7.74994H14.0001C14.199 7.74994 14.3898 7.82896 14.5304 7.96961C14.6711 8.11027 14.7501 8.30103 14.7501 8.49994Z"
+              fill="#FEFEFE"
+            />
+          </svg>
+          Precedente</a
+        >
+        <a
+          href="guantoni2.html"
+          class="button inter-semi-bold"
+          onclick="stopSpeaking()"
+        >
+          Successivo<svg
+            style="transform: scaleX(-1)"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.7501 8.49994C14.7501 8.69886 14.6711 8.88962 14.5304 9.03027C14.3898 9.17093 14.199 9.24994 14.0001 9.24994H4.8126L8.0326 12.4693C8.1735 12.6102 8.25265 12.8013 8.25265 13.0006C8.25265 13.1998 8.1735 13.3909 8.0326 13.5318C7.89171 13.6727 7.70061 13.7519 7.50135 13.7519C7.3021 13.7519 7.111 13.6727 6.9701 13.5318L2.4701 9.03182C2.40018 8.96214 2.34471 8.87935 2.30685 8.78818C2.269 8.69702 2.24951 8.59928 2.24951 8.50057C2.24951 8.40186 2.269 8.30412 2.30685 8.21295C2.34471 8.12179 2.40018 8.039 2.4701 7.96932L6.9701 3.46932C7.03987 3.39955 7.12269 3.34421 7.21384 3.30646C7.30499 3.2687 7.40269 3.24927 7.50135 3.24927C7.60002 3.24927 7.69771 3.2687 7.78886 3.30646C7.88002 3.34421 7.96284 3.39955 8.0326 3.46932C8.10237 3.53908 8.15771 3.62191 8.19546 3.71306C8.23322 3.80421 8.25265 3.90191 8.25265 4.00057C8.25265 4.09923 8.23322 4.19693 8.19546 4.28808C8.15771 4.37923 8.10237 4.46205 8.0326 4.53182L4.8126 7.74994H14.0001C14.199 7.74994 14.3898 7.82896 14.5304 7.96961C14.6711 8.11027 14.7501 8.30103 14.7501 8.49994Z"
+              fill="#FEFEFE"
+            />
+          </svg>
+        </a>
+      </div>
+    </main>
+  </body>
+  <script>
+    let opened = false;
+    function openMenu() {
+      console.log("open", opened);
+      if (!opened) {
+        {
+          document.querySelector("header > ul").style.display = "flex";
+          document.querySelector("header").style.minHeight = "100vh";
+          document.querySelector("header").style.justifycontent = "start";
+        }
+      } else {
+        document.querySelector("header").style.minHeight = "3rem";
+        setTimeout(() => {
+          document.querySelector("header > ul").style.display = "none";
+        }, 450);
+      }
+      opened = !opened;
+    }
+  </script>
+</html>

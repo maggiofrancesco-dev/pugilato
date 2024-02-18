@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/quiz.css" />
+    <title>Il pugilato</title>
+  </head>
+  <body class="inter-normal">
+    <header>
+      <ul>
+        <li>
+          <a href="./progetto.html" onclick="stopSpeaking()">Introduzione</a>
+        </li>
+        <li>
+          <a href="./attrezzatura.html" onclick="stopSpeaking()"
+            >Attrezzatura</a
+          >
+        </li>
+        <li>
+          <a href="./regolamento_map.html" onclick="stopSpeaking()"
+            >Regolamento</a
+          >
+        </li>
+        <li>
+          <a href="./comportamento_map.html" onclick="stopSpeaking()"
+            >Comportamento</a
+          >
+        </li>
+        <li>
+          <a href="./rischibenefici.html" onclick="stopSpeaking()"
+            >Rischi e Benefici</a
+          >
+        </li>
+        <li>
+          <a href="./stili.html" onclick="stopSpeaking()">Stili di Pugilato</a>
+        </li>
+        <li><a href="./esercizi.html" onclick="stopSpeaking()">Esercizi</a></li>
+        <li>
+          <a href="./cennistorici.html" onclick="stopSpeaking()"
+            >Cenni Storici</a
+          >
+        </li>
+        <li><a href="" onclick="window.close();">Esci</a></li>
+      </ul>
+      <div onclick="openMenu()">
+        <svg
+          class="burger-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="800px"
+          height="800px"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </header>
+    <main>
+      <h3 class="title inter-semi-bold">
+        <div class="circle"></div>
+        Quiz: Attrezzatura
+      </h3>
+      <div class="answers_container"></div>
+      <div class="buttons_container">
+        <a href="conchiglia.html" class="button inter-semi-bold"
+          ><svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.7501 8.49994C14.7501 8.69886 14.6711 8.88962 14.5304 9.03027C14.3898 9.17093 14.199 9.24994 14.0001 9.24994H4.8126L8.0326 12.4693C8.1735 12.6102 8.25265 12.8013 8.25265 13.0006C8.25265 13.1998 8.1735 13.3909 8.0326 13.5318C7.89171 13.6727 7.70061 13.7519 7.50135 13.7519C7.3021 13.7519 7.111 13.6727 6.9701 13.5318L2.4701 9.03182C2.40018 8.96214 2.34471 8.87935 2.30685 8.78818C2.269 8.69702 2.24951 8.59928 2.24951 8.50057C2.24951 8.40186 2.269 8.30412 2.30685 8.21295C2.34471 8.12179 2.40018 8.039 2.4701 7.96932L6.9701 3.46932C7.03987 3.39955 7.12269 3.34421 7.21384 3.30646C7.30499 3.2687 7.40269 3.24927 7.50135 3.24927C7.60002 3.24927 7.69771 3.2687 7.78886 3.30646C7.88002 3.34421 7.96284 3.39955 8.0326 3.46932C8.10237 3.53908 8.15771 3.62191 8.19546 3.71306C8.23322 3.80421 8.25265 3.90191 8.25265 4.00057C8.25265 4.09923 8.23322 4.19693 8.19546 4.28808C8.15771 4.37923 8.10237 4.46205 8.0326 4.53182L4.8126 7.74994H14.0001C14.199 7.74994 14.3898 7.82896 14.5304 7.96961C14.6711 8.11027 14.7501 8.30103 14.7501 8.49994Z"
+              fill="#FEFEFE"
+            />
+          </svg>
+          Precedente</a
+        >
+        <a href="regolamento_map.html" class="button inter-semi-bold">
+          Successivo<svg
+            style="transform: scaleX(-1)"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.7501 8.49994C14.7501 8.69886 14.6711 8.88962 14.5304 9.03027C14.3898 9.17093 14.199 9.24994 14.0001 9.24994H4.8126L8.0326 12.4693C8.1735 12.6102 8.25265 12.8013 8.25265 13.0006C8.25265 13.1998 8.1735 13.3909 8.0326 13.5318C7.89171 13.6727 7.70061 13.7519 7.50135 13.7519C7.3021 13.7519 7.111 13.6727 6.9701 13.5318L2.4701 9.03182C2.40018 8.96214 2.34471 8.87935 2.30685 8.78818C2.269 8.69702 2.24951 8.59928 2.24951 8.50057C2.24951 8.40186 2.269 8.30412 2.30685 8.21295C2.34471 8.12179 2.40018 8.039 2.4701 7.96932L6.9701 3.46932C7.03987 3.39955 7.12269 3.34421 7.21384 3.30646C7.30499 3.2687 7.40269 3.24927 7.50135 3.24927C7.60002 3.24927 7.69771 3.2687 7.78886 3.30646C7.88002 3.34421 7.96284 3.39955 8.0326 3.46932C8.10237 3.53908 8.15771 3.62191 8.19546 3.71306C8.23322 3.80421 8.25265 3.90191 8.25265 4.00057C8.25265 4.09923 8.23322 4.19693 8.19546 4.28808C8.15771 4.37923 8.10237 4.46205 8.0326 4.53182L4.8126 7.74994H14.0001C14.199 7.74994 14.3898 7.82896 14.5304 7.96961C14.6711 8.11027 14.7501 8.30103 14.7501 8.49994Z"
+              fill="#FEFEFE"
+            />
+          </svg>
+        </a>
+      </div>
+    </main>
+  </body>
+  <script type="module">
+    import jsonData from "./js/quiz.json" assert { type: "json" };
+    let questionsIndex = 0;
+    let section = "attrezzatura";
+
+    let opened = false;
+    let chosen;
+    let chosenId;
+    function openMenu() {
+      console.log("open", opened);
+      if (!opened) {
+        {
+          document.querySelector("header > ul").style.display = "flex";
+          document.querySelector("header").style.minHeight = "100vh";
+          document.querySelector("header").style.justifyContent = "start";
+        }
+      } else {
+        document.querySelector("header").style.minHeight = "3rem";
+        setTimeout(() => {
+          document.querySelector("header > ul").style.display = "none";
+        }, 450);
+      }
+      opened = !opened;
+    }
+
+    createItems();
+
+    function chooseAnswer(element, index) {
+      if (chosen !== undefined) {
+        chosen.children[0].style.left = "-100%";
+        chosen.style.color = "var(--secondary)";
+        chosen.children[2].style.outlineColor = "var(--secondary)";
+        chosen.children[2].style.borderColor = "var(--primary)";
+        chosen.children[2].checked = false;
+      } else {
+        document.querySelector(".check").disabled = false;
+      }
+      chosen = element;
+      chosenId = index;
+      element.children[0].style.left = "0%";
+      element.style.color = "var(--primary)";
+      element.children[2].style.outlineColor = "var(--primary)";
+      element.children[2].style.borderColor = "var(--accent)";
+      element.children[2].checked = true;
+    }
+
+    function getResult(id) {
+      return jsonData[section][questionsIndex].answers[id].correct;
+    }
+
+    function checkAnswer() {
+      if (!chosen) {
+        alert("Nessun opzione selezionata!");
+      } else {
+        const res = getResult(chosenId);
+        if (res) {
+          chosen.children[0].style.backgroundColor = "green";
+          chosen.children[2].style.borderColor = "green";
+        } else {
+          chosen.children[0].style.backgroundColor = "black";
+          chosen.children[2].style.borderColor = "black";
+        }
+        if (questionsIndex <= jsonData[section].length - 2) {
+          document.querySelector(".check").textContent = "Avanti";
+          document.querySelector(".check").addEventListener("click", () => {
+            nextQuestion();
+          });
+        } else {
+          document.querySelector(".check").style.display = "none";
+        }
+        const answers = document.querySelectorAll(".answer");
+        for (const [index, answer] of answers.entries()) {
+          var old_element = answer;
+          var new_element = old_element.cloneNode(true);
+          old_element.parentNode.replaceChild(new_element, old_element);
+        }
+      }
+    }
+
+    function nextQuestion() {
+      questionsIndex += 1;
+      deleteItems();
+      createItems();
+    }
+
+    function deleteItems() {
+      chosen = undefined;
+      chosenId = undefined;
+      const answ_ctr = document.querySelector(".answers_container");
+      answ_ctr.innerHTML = "";
+    }
+
+    function createItems() {
+      const data = jsonData[section][questionsIndex];
+      const answers = data.answers;
+      const answ_ctr = document.querySelector(".answers_container");
+      const question_p = document.createElement("p");
+      question_p.setAttribute("class", "question inter-medium");
+      question_p.textContent = jsonData[section][questionsIndex].question;
+      answ_ctr.appendChild(question_p);
+      for (const [index, answer] of answers.entries()) {
+        const answer_div = document.createElement("div");
+        answer_div.setAttribute("class", "answer");
+
+        const progress_div = document.createElement("div");
+        progress_div.setAttribute("class", "progress");
+        const label = document.createElement("label");
+        label.setAttribute("for", "ans" + (index + 1));
+        label.textContent = answer.label;
+        const input = document.createElement("input");
+        input.setAttribute("type", "radio");
+        input.setAttribute("name", "ans" + (index + 1));
+        input.setAttribute("id", "ans" + (index + 1));
+        answer_div.appendChild(progress_div);
+        answer_div.appendChild(label);
+        answer_div.appendChild(input);
+        answ_ctr.appendChild(answer_div);
+      }
+      answ_ctr.innerHTML +=
+        '<button class="button check inter-semi-bold" disabled>Conferma</button>';
+      answ_ctr.children[answ_ctr.children.length - 1].addEventListener(
+        "click",
+        () => {
+          checkAnswer();
+        }
+      );
+
+      const answers2 = document.querySelectorAll(".answer");
+      for (const [index, answer] of answers2.entries()) {
+        answer.addEventListener("click", (e) => {
+          chooseAnswer(answer, index);
+        });
+      }
+    }
+  </script>
+</html>

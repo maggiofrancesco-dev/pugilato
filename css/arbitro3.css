@@ -1,0 +1,9 @@
+thead > tr > * {
+  padding-bottom: 0.5rem;
+}
+
+th,
+td {
+  padding: 0.3rem 2rem;
+  text-align: center;
+}

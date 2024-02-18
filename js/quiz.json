@@ -1,0 +1,318 @@
+{
+  "attrezzatura": [
+    {
+      "question": "Per cosa si usano i bendaggi?",
+      "answers": [
+        {
+          "label": "Estetica",
+          "correct": false
+        },
+        {
+          "label": "Proteggere il polso",
+          "correct": false
+        },
+        {
+          "label": "Proteggere tutte le articolazioni della mano",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Quale di queste nozioni sui guantoni è vera?",
+      "answers": [
+        {
+          "label": "Vengono scelti in base al design",
+          "correct": false
+        },
+        {
+          "label": "In base al peso dell’atleta si decidono gli Once(OZ)",
+          "correct": true
+        },
+        {
+          "label": "Un guantone vale l’altro",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quale di queste nozioni sul caschetto è vera?",
+      "answers": [
+        {
+          "label": "I principianti possono anche evitare di metterselo",
+          "correct": false
+        },
+        {
+          "label": "Protegge il viso e non compromette ne vista ne respiro",
+          "correct": false
+        },
+        {
+          "label": "Possono essercene di diverse forme e dimensioni",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Quale di queste nozioni sulla conchiglia è vera?",
+      "answers": [
+        {
+          "label": "Durante lo sparring è obbligatoria",
+          "correct": false
+        },
+        {
+          "label": "Protegge reni e testicoli",
+          "correct": true
+        },
+        {
+          "label": "La indossano solo gli uomini",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "comportamento": [
+    {
+      "question": "Quale di queste nozioni sull'avversario è vera?",
+      "answers": [
+        {
+          "label": "L’avversario non conta nulla",
+          "correct": false
+        },
+        {
+          "label": "Si può essere scorretti durante un combattimento",
+          "correct": false
+        },
+        {
+          "label": "L’avversario è una persona come me",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Cosa si fa una volta terminato un match?",
+      "answers": [
+        {
+          "label": "Dopo un match non si saluta l’avversario",
+          "correct": false
+        },
+        {
+          "label": "Dopo un match ci si abbraccia per rispetto reciproco",
+          "correct": true
+        },
+        {
+          "label": "In caso di sconfitta si esce dal ring con rabbia",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quale di queste affermazioni è vera?",
+      "answers": [
+        {
+          "label": "Dato che l’avversario ha le protezioni si possono tirare pugni in zone illegali",
+          "correct": false
+        },
+        {
+          "label": "Ci si può colpire dietro la nuca",
+          "correct": false
+        },
+        {
+          "label": "Quando si combatte bisogna riconoscere i propri limiti",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Quale di queste nozioni sul maestro è vera?",
+      "answers": [
+        {
+          "label": "Se il maestro ti dice qualcosa di negativo non devi ascoltarlo perché ti scoraggia",
+          "correct": false
+        },
+        {
+          "label": "Il maestro durante il match non può dare consigli",
+          "correct": false
+        },
+        {
+          "label": "Ascoltare sempre il maestro",
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "rischi_e_benefici": [
+    {
+      "question": "A cosa può servire il pugilato?",
+      "answers": [
+        {
+          "label": "Quello che si impara in palestra può essere utile per autodifesa",
+          "correct": true
+        },
+        {
+          "label": "Usare ciò che abbiamo imparato per ottenere quello che vogliamo",
+          "correct": false
+        },
+        {
+          "label": "Colpire l’avversario in strada senza ritegno",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quali di queste nozioni è vera?",
+      "answers": [
+        {
+          "label": "Il pugilato è adatto solo a persone violente",
+          "correct": false
+        },
+        {
+          "label": "Chiunque può praticare il pugilato",
+          "correct": true
+        },
+        {
+          "label": "Il pugilato non è rischioso al 100%",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quale di queste affermazioni inerenti i rischi del pugilato è vera?",
+      "answers": [
+        {
+          "label": "Non si corrono rischi",
+          "correct": false
+        },
+        {
+          "label": "Se combatti non devi sapere a cosa vai incontro",
+          "correct": false
+        },
+        {
+          "label": "Quando combatti devi ricordarti che come l’avversario può farti del male rischi di farglielo anche tu se combatti scorrettamente",
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "benefici": [
+    {
+      "question": "Quale di queste caratteristiche del pugilato è vera?",
+      "answers": [
+        {
+          "label": "È uno sport salutare",
+          "correct": true
+        },
+        {
+          "label": "Aiuta a diventare persone violente",
+          "correct": false
+        },
+        {
+          "label": "È uno sport come tutti gli altri",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quali di queste nozioni è vera?",
+      "answers": [
+        {
+          "label": "Il pugilato insegna a essere rispettosi",
+          "correct": true
+        },
+        {
+          "label": "Il pugilato aiuta ad usare la violenza come mezzo risolutivo",
+          "correct": false
+        },
+        {
+          "label": "Se sei bravo sul ring sei bravo a combattere in strada",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "A cosa serve l'allenamento?",
+      "answers": [
+        {
+          "label": "Allena riflessi e agilità",
+          "correct": true
+        },
+        {
+          "label": "L’allenamento è inutile, conta solo combattere sul ring",
+          "correct": false
+        },
+        {
+          "label": "È una scusa per essere aggressivi con i tuoi compagni",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "stili": [
+    {
+      "question": "Quale delle seguenti nozioni è vera?",
+      "answers": [
+        {
+          "label": "Quando si combatte è necessario dimenticare ogni tecnica imparata",
+          "correct": false
+        },
+        {
+          "label": "Ognuno ha il proprio stile di combattimento",
+          "correct": true
+        },
+        {
+          "label": "L’avversario solo perché meno tecnico è più facile da combattere",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Quale dei seguenti stili è il più forte?",
+      "answers": [
+        {
+          "label": "Gli out-fighter sono migliori rispetto agli altri",
+          "correct": false
+        },
+        {
+          "label": "Gli in-fighter sono migliori rispetto agli altri",
+          "correct": false
+        },
+        {
+          "label": "Non conta lo stile ma la bravura di un pugile",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Quale delle seguenti nozioni è vera?",
+      "answers": [
+        {
+          "label": "La sola forza garantisce la vittoria al 100%",
+          "correct": false
+        },
+        {
+          "label": "Se si è veloci l’avversario non riuscirà mai ad assestare un pugno",
+          "correct": false
+        },
+        {
+          "label": "I riflessi sono una cosa fondamentale nel pugilato",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Quale delle seguenti nozioni è vera?",
+      "answers": [
+        {
+          "label": "Gli in-fighter sono considerati i migliori incassatori",
+          "correct": true
+        },
+        {
+          "label": "Gli out-fighter sono i pugili dotati di più forza fisica",
+          "correct": false
+        },
+        {
+          "label": "Ogni pugile ha la guardia uguale agli altri",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
