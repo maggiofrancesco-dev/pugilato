@@ -11,7 +11,28 @@ msgreplaced = msgreplaced.replaceAll("OZ", "once");
 msg.text = msgreplaced;
 msg.lang = "it";
 
-console.log(msg.text);
+document.querySelector(".hamburger").addEventListener("click", () => {
+  openMenu();
+});
+
+let opened = false;
+let chosen;
+let chosenId;
+function openMenu() {
+  if (!opened) {
+    {
+      document.querySelector("header > ul").style.display = "flex";
+      document.querySelector("header").style.minHeight = "100vh";
+      document.querySelector("header").style.justifyContent = "start";
+    }
+  } else {
+    document.querySelector("header").style.minHeight = "3rem";
+    setTimeout(() => {
+      document.querySelector("header > ul").style.display = "none";
+    }, 450);
+  }
+  opened = !opened;
+}
 
 function speak() {
   if (!window.speechSynthesis.speaking) {

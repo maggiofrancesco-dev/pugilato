@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content
-      read="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,7 +48,7 @@
         </li>
         <li><a href="./aiuto.html">Aiuto</a></li>
       </ul>
-      <div onclick="openMenu()">
+      <div class="hamburger">
         <svg
           class="burger-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -171,23 +166,5 @@
       </div>
     </main>
   </body>
-  <script>
-    let opened = false;
-    function openMenu() {
-      console.log("open", opened);
-      if (!opened) {
-        {
-          document.querySelector("header > ul").style.display = "flex";
-          document.querySelector("header").style.minHeight = "100vh";
-          document.querySelector("header").style.justifycontent = "start";
-        }
-      } else {
-        document.querySelector("header").style.minHeight = "3rem";
-        setTimeout(() => {
-          document.querySelector("header > ul").style.display = "none";
-        }, 450);
-      }
-      opened = !opened;
-    }
-  </script>
+  <script></script>
 </html>
