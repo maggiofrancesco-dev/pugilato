@@ -6,7 +6,7 @@
   --accent: #dd1515;
   --accent-hover: #c41111;
   --accent-disabled: #c91818;
-  --padding: 15rem;
+  --padding: 10rem;
   font-size: 16px; /* cambia il fontsize qui per scalare tutta la pagina */
 }
 
@@ -59,7 +59,7 @@ body {
 header {
   padding: 1rem var(--padding);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   max-height: 5rem;
   width: 100vw;
@@ -70,15 +70,26 @@ header {
   font-size: 0.95rem;
 }
 
+.hamburger {
+  display: none;
+}
+
 header > ul {
   display: flex;
   gap: 1.5rem;
   list-style: none;
+  padding-inline-start: 0;
 }
 
 header > ul > li > a {
   text-decoration: none;
   color: inherit;
+}
+
+header > ul > li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header > ul > li > a:hover {
@@ -223,6 +234,10 @@ main {
   :root {
     font-size: 16px;
     --padding: 1.5rem;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   main {

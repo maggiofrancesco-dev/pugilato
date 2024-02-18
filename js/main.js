@@ -22,6 +22,8 @@ function openMenu() {
   if (!opened) {
     {
       document.querySelector("header > ul").style.display = "flex";
+      document.querySelector(".ul2").style.display = "flex";
+
       document.querySelector("header").style.minHeight = "100vh";
       document.querySelector("header").style.justifyContent = "start";
     }
@@ -29,6 +31,7 @@ function openMenu() {
     document.querySelector("header").style.minHeight = "3rem";
     setTimeout(() => {
       document.querySelector("header > ul").style.display = "none";
+      document.querySelector(".ul2").style.display = "none";
     }, 450);
   }
   opened = !opened;
