@@ -7,7 +7,7 @@
   --accent-hover: #c41111;
   --accent-disabled: #c91818;
   --padding: 15rem;
-  font-size: 18px; /* cambia il fontsize qui per scalare tutta la pagina */
+  font-size: 16px; /* cambia il fontsize qui per scalare tutta la pagina */
 }
 
 * {
@@ -67,6 +67,7 @@ header {
   color: var(--primary);
   transition: min-height 500ms ease-in-out;
   overflow: hidden;
+  font-size: 0.95rem;
 }
 
 header > ul {
@@ -148,6 +149,11 @@ main {
   object-position: center;
   max-height: 100%;
   max-width: 100%;
+  width: fit-content;
+}
+
+.image_ctr {
+  width: fit-content;
 }
 
 .buttons_container {
@@ -158,6 +164,12 @@ main {
   flex-grow: 0;
   justify-content: space-between;
   margin-bottom: 4rem;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .button {
@@ -216,7 +228,7 @@ main {
   main {
     min-height: calc(100vh - 4rem);
     max-height: none;
-    flex: 1;
+    flex: 1 !important;
   }
 
   body {

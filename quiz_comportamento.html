@@ -122,139 +122,122 @@
     </main>
   </body>
   <script src="js/main.js"></script>
-  <script type="module">
-    import jsonData from "./js/quiz.json" assert { type: "json" };
-    let questionsIndex = 0;
-    let section = "comportamento";
+  <script async>
+    fetch("./js/quiz.json").then((response) => {
+      response.json().then((jsonData) => {
+        let questionsIndex = 0;
+        let section = "comportamento";
 
-    let opened = false;
-    let chosen;
-    let chosenId;
-    function openMenu() {
-      console.log("open", opened);
-      if (!opened) {
-        {
-          document.querySelector("header > ul").style.display = "flex";
-          document.querySelector("header").style.minHeight = "100vh";
-          document.querySelector("header").style.justifyContent = "start";
+        createItems();
+
+        function chooseAnswer(element, index) {
+          if (chosen !== undefined) {
+            chosen.children[0].style.left = "-100%";
+            chosen.style.color = "var(--secondary)";
+            chosen.children[2].style.outlineColor = "var(--secondary)";
+            chosen.children[2].style.borderColor = "var(--primary)";
+            chosen.children[2].checked = false;
+          } else {
+            document.querySelector(".check").disabled = false;
+          }
+          chosen = element;
+          chosenId = index;
+          element.children[0].style.left = "0%";
+          element.style.color = "var(--primary)";
+          element.children[2].style.outlineColor = "var(--primary)";
+          element.children[2].style.borderColor = "var(--accent)";
+          element.children[2].checked = true;
         }
-      } else {
-        document.querySelector("header").style.minHeight = "3rem";
-        setTimeout(() => {
-          document.querySelector("header > ul").style.display = "none";
-        }, 450);
-      }
-      opened = !opened;
-    }
 
-    createItems();
-
-    function chooseAnswer(element, index) {
-      if (chosen !== undefined) {
-        chosen.children[0].style.left = "-100%";
-        chosen.style.color = "var(--secondary)";
-        chosen.children[2].style.outlineColor = "var(--secondary)";
-        chosen.children[2].style.borderColor = "var(--primary)";
-        chosen.children[2].checked = false;
-      } else {
-        document.querySelector(".check").disabled = false;
-      }
-      chosen = element;
-      chosenId = index;
-      element.children[0].style.left = "0%";
-      element.style.color = "var(--primary)";
-      element.children[2].style.outlineColor = "var(--primary)";
-      element.children[2].style.borderColor = "var(--accent)";
-      element.children[2].checked = true;
-    }
-
-    function getResult(id) {
-      return jsonData[section][questionsIndex].answers[id].correct;
-    }
-
-    function checkAnswer() {
-      if (!chosen) {
-        alert("Nessun opzione selezionata!");
-      } else {
-        const res = getResult(chosenId);
-        if (res) {
-          chosen.children[0].style.backgroundColor = "green";
-          chosen.children[2].style.borderColor = "green";
-        } else {
-          chosen.children[0].style.backgroundColor = "black";
-          chosen.children[2].style.borderColor = "black";
+        function getResult(id) {
+          return jsonData[section][questionsIndex].answers[id].correct;
         }
-        if (questionsIndex <= jsonData[section].length - 2) {
-          document.querySelector(".check").textContent = "Avanti";
-          document.querySelector(".check").addEventListener("click", () => {
-            nextQuestion();
-          });
-        } else {
-          document.querySelector(".check").style.display = "none";
+
+        function checkAnswer() {
+          if (!chosen) {
+            alert("Nessun opzione selezionata!");
+          } else {
+            const res = getResult(chosenId);
+            if (res) {
+              chosen.children[0].style.backgroundColor = "green";
+              chosen.children[2].style.borderColor = "green";
+            } else {
+              chosen.children[0].style.backgroundColor = "black";
+              chosen.children[2].style.borderColor = "black";
+            }
+            if (questionsIndex <= jsonData[section].length - 2) {
+              document.querySelector(".check").textContent = "Avanti";
+              document.querySelector(".check").addEventListener("click", () => {
+                nextQuestion();
+              });
+            } else {
+              document.querySelector(".check").style.display = "none";
+            }
+            const answers = document.querySelectorAll(".answer");
+            for (const [index, answer] of answers.entries()) {
+              var old_element = answer;
+              var new_element = old_element.cloneNode(true);
+              old_element.parentNode.replaceChild(new_element, old_element);
+            }
+          }
         }
-        const answers = document.querySelectorAll(".answer");
-        for (const [index, answer] of answers.entries()) {
-          var old_element = answer;
-          var new_element = old_element.cloneNode(true);
-          old_element.parentNode.replaceChild(new_element, old_element);
+
+        function nextQuestion() {
+          questionsIndex += 1;
+          deleteItems();
+          createItems();
         }
-      }
-    }
 
-    function nextQuestion() {
-      questionsIndex += 1;
-      deleteItems();
-      createItems();
-    }
-
-    function deleteItems() {
-      chosen = undefined;
-      chosenId = undefined;
-      const answ_ctr = document.querySelector(".answers_container");
-      answ_ctr.innerHTML = "";
-    }
-
-    function createItems() {
-      const data = jsonData[section][questionsIndex];
-      const answers = data.answers;
-      const answ_ctr = document.querySelector(".answers_container");
-      const question_p = document.createElement("p");
-      question_p.setAttribute("class", "question inter-medium");
-      question_p.textContent = jsonData[section][questionsIndex].question;
-      answ_ctr.appendChild(question_p);
-      for (const [index, answer] of answers.entries()) {
-        const answer_div = document.createElement("div");
-        answer_div.setAttribute("class", "answer");
-
-        const progress_div = document.createElement("div");
-        progress_div.setAttribute("class", "progress");
-        const label = document.createElement("label");
-        label.setAttribute("for", "ans" + (index + 1));
-        label.textContent = answer.label;
-        const input = document.createElement("input");
-        input.setAttribute("type", "radio");
-        input.setAttribute("name", "ans" + (index + 1));
-        input.setAttribute("id", "ans" + (index + 1));
-        answer_div.appendChild(progress_div);
-        answer_div.appendChild(label);
-        answer_div.appendChild(input);
-        answ_ctr.appendChild(answer_div);
-      }
-      answ_ctr.innerHTML +=
-        '<button class="button check inter-semi-bold" disabled>Conferma</button>';
-      answ_ctr.children[answ_ctr.children.length - 1].addEventListener(
-        "click",
-        () => {
-          checkAnswer();
+        function deleteItems() {
+          chosen = undefined;
+          chosenId = undefined;
+          const answ_ctr = document.querySelector(".answers_container");
+          answ_ctr.innerHTML = "";
         }
-      );
 
-      const answers2 = document.querySelectorAll(".answer");
-      for (const [index, answer] of answers2.entries()) {
-        answer.addEventListener("click", (e) => {
-          chooseAnswer(answer, index);
-        });
-      }
-    }
+        function createItems() {
+          const data = jsonData[section][questionsIndex];
+          const answers = data.answers;
+          const answ_ctr = document.querySelector(".answers_container");
+          const question_p = document.createElement("p");
+          question_p.setAttribute("class", "question inter-medium");
+          question_p.textContent = jsonData[section][questionsIndex].question;
+          answ_ctr.appendChild(question_p);
+          for (const [index, answer] of answers.entries()) {
+            const answer_div = document.createElement("div");
+            answer_div.setAttribute("class", "answer");
+
+            const progress_div = document.createElement("div");
+            progress_div.setAttribute("class", "progress");
+            const label = document.createElement("label");
+            label.setAttribute("for", "ans" + (index + 1));
+            label.textContent = answer.label;
+            const input = document.createElement("input");
+            input.setAttribute("type", "radio");
+            input.setAttribute("name", "ans" + (index + 1));
+            input.setAttribute("id", "ans" + (index + 1));
+            answer_div.appendChild(progress_div);
+            answer_div.appendChild(label);
+            answer_div.appendChild(input);
+            answ_ctr.appendChild(answer_div);
+          }
+          answ_ctr.innerHTML +=
+            '<button class="button check inter-semi-bold" disabled>Conferma</button>';
+          answ_ctr.children[answ_ctr.children.length - 1].addEventListener(
+            "click",
+            () => {
+              checkAnswer();
+            }
+          );
+
+          const answers2 = document.querySelectorAll(".answer");
+          for (const [index, answer] of answers2.entries()) {
+            answer.addEventListener("click", (e) => {
+              chooseAnswer(answer, index);
+            });
+          }
+        }
+      });
+    });
   </script>
 </html>
